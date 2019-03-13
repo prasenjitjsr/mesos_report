@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongo": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb://mesos:mesos1@ds115071.mlab.com:15071/mesos_report",
+    "database": "mesos_report",
+    "password": "",
+    "name": "mongo",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

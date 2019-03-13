@@ -1,0 +1,32 @@
+{
+  "name": "User",
+  "plural": "user",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "user_id": {
+      "type": "number",
+      "required": true
+    },
+    "Class": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "reviews": {
+      "type": "hasMany",
+      "model": "Quiz",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

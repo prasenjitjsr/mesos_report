@@ -1,0 +1,40 @@
+{
+  "name": "Quiz_ans",
+  "plural": "quiz_ans",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "quiz_id": {
+      "type": "number",
+      "required": true
+    },
+    "quiz_title": {
+      "type": "string",
+      "required": true
+    },
+    "max_question": {
+      "type": "number",
+      "required": true
+    },
+    "user_id": {
+      "type": "number",
+      "required": true
+    },
+    "is_completed": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "quiz_ans_response": {
+      "type": "hasMany",
+      "model": "Quiz_ans_response",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
